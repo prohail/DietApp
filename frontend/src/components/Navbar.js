@@ -19,6 +19,7 @@ const Navbar = () => {
         <nav>
           {user && (
             <div>
+              <span>Welcome {user.name || user.user.name}</span>
               <Link to="/services" className="px-4 fw-semibold">
                 Services
               </Link>
