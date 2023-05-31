@@ -5,13 +5,20 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [password, setPassword] = useState("");
+  const [pass, setPass] = useState("");
+  const [pass2, setPass2] = useState("");
+  const [nopass, setNopass] = useState(null);
+
   const { signup, error, isLoading } = useSignup();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const sPhone = phone.toString();
-    await signup(name, email, sPhone, password);
+    if (pass === pass2) {
+      await signup(name, email, sPhone, pass);
+    } else {
+      setNopass("Passwords Do Not Match!");
+    }
   };
 
   return (
@@ -50,13 +57,20 @@ const Signup = () => {
         <label>Password:</label>
         <input
           type="password"
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
+          onChange={(e) => setPass(e.target.value)}
+          value={pass}
+          required
+        />
+        <label>Confirm Password:</label>
+        <input
+          type="password"
+          onChange={(e) => setPass2(e.target.value)}
+          value={pass2}
           required
         />
 
         <button disabled={isLoading}>Sign up</button>
-        {error && <div className="error">{error}</div>}
+        {(error || nopass) && <div className="error">{error || nopass}</div>}
       </form>
     </div>
   );

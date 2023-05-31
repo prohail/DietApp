@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="z-1">
       <div className="container d-flex justify-content-between py-2">
         <Link to="/">
-          <h2 className="fw-semibold">Diet App</h2>
+          <h2 className="fw-semibold">Eat This Much</h2>
         </Link>
         <nav>
           {user && (
