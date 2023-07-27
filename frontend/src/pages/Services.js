@@ -66,7 +66,9 @@ export default function Services() {
                   and more for a healthy and sustainable lifestyle.
                 </Card.Text>
                 <div className="text-center">
-                  <Button variant="outline-primary">Read More</Button>
+                  <Link to="/plant-based">
+                    <Button variant="outline-primary">Read More</Button>
+                  </Link>
                 </div>
               </Card.Body>
             </Card>
@@ -86,7 +88,9 @@ export default function Services() {
                   and health benefits for balanced eating.
                 </Card.Text>
                 <div className="text-center">
-                  <Button variant="outline-primary">Read More</Button>
+                  <Link to="/flexiterian">
+                    <Button variant="outline-primary">Read More</Button>
+                  </Link>
                 </div>
               </Card.Body>
             </Card>
@@ -102,7 +106,9 @@ export default function Services() {
                   potential health benefits.
                 </Card.Text>
                 <div className="text-center">
-                  <Button variant="outline-primary">Read More</Button>
+                  <Link to="/ketogenic">
+                    <Button variant="outline-primary">Read More</Button>
+                  </Link>
                 </div>
               </Card.Body>
             </Card>
@@ -119,7 +125,9 @@ export default function Services() {
                   grains, nuts, and healthy fats for cognitive well-being.
                 </Card.Text>
                 <div className="text-center">
-                  <Button variant="outline-primary">Read More</Button>
+                  <Link to="/mind-diet">
+                    <Button variant="outline-primary">Read More</Button>
+                  </Link>
                 </div>
               </Card.Body>
             </Card>
