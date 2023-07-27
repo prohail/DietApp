@@ -9,7 +9,7 @@ export default function Welcome() {
           <img src={pic} alt="Coach" className="img-fluid" />
         </div>
 
-        <div className="col-12 col-md-8 text-start pt-5 ps-2 pe-5">
+        <div className="col-12 col-md-8 text-start pt-3 ps-2 pe-5">
           <h6 className="display-7 text-primary">WELCOME TO HEALTHCARE</h6>
           <h3 className="text-dark fw-bold fs-4 pe-5">
             Hello! Health Care is a natural way of improving <br /> your health

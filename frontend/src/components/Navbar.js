@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/useAuthContext";
+import logo from "../assets/logo.jpeg";
 
 const Navbar = () => {
   const { logout } = useLogout();
@@ -14,7 +15,7 @@ const Navbar = () => {
     <header className="z-1">
       <div className="container d-flex justify-content-between py-2">
         <Link to="/">
-          <h2 className="fw-semibold">Eat This Much</h2>
+          <img src={logo} alt="logo" className="logo" />
         </Link>
         <nav>
           {user && (

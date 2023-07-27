@@ -10,6 +10,8 @@ import Landingpage from "./pages/Landingpage";
 import Intermittent from "./pages/Intermittent";
 import Mediterranean from "./pages/Mediterranean";
 import Services from "./pages/Services";
+import LearnMore from "./pages/LearnMore";
+import ContactUsPage from "./pages/ContactUsPage";
 
 function App() {
   const { user } = useAuthContext();
@@ -20,6 +22,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Landingpage />} />
+          <Route path="/learnmore" element={<LearnMore />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/intermittent-diet" element={<Intermittent />} />
           <Route path="/medi-diet" element={<Mediterranean />} />
