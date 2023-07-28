@@ -16,6 +16,7 @@ import PlantBasedPage from "./pages/PlantBasedPage";
 import KetoPage from "./pages/KetoPage";
 import FlexiterianPage from "./pages/FlexiterianPage";
 import MindDietPage from "./pages/MindDietPage";
+import Footer from "./components/Footer";
 
 function App() {
   const { user } = useAuthContext();
@@ -51,6 +52,7 @@ function App() {
             element={!user ? <Signup /> : <Navigate to="/" />}
           />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

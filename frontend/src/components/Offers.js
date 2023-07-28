@@ -16,11 +16,13 @@ export default function Offers() {
             <Card.Body className="px-5 fw-light">
               <Card.Title className="text-center">Nutrition Plans</Card.Title>
               <Card.Text className="text-center">
-                Even the all-powerful Pointing has no control about the blind
-                texts it is an almost unorthographic.
+                Tailored nutrition plans crafted to improve your health,
+                tailored to your preferences and goals for lasting well-being.
               </Card.Text>
               <div className="text-center">
-                <Button variant="outline-primary">Read More</Button>
+                <Button variant="outline-primary">
+                  <Link to="/learnmore">Learn More</Link>
+                </Button>
               </div>
             </Card.Body>
           </Card>
@@ -32,11 +34,14 @@ export default function Offers() {
             <Card.Body className="px-5 fw-light">
               <Card.Title className="text-center">Exersise Program</Card.Title>
               <Card.Text className="text-center">
-                Even the all-powerful Pointing has no control about the blind
-                texts it is an almost unorthographic.
+                Effortlessly track your workouts and progress with our
+                user-friendly exercise tracking platform, empowering you to
+                achieve your fitness goals.
               </Card.Text>
               <div className="text-center">
-                <Button variant="outline-primary">Read More</Button>
+                <Button variant="outline-primary">
+                  <Link to="/home">View</Link>
+                </Button>
               </div>
             </Card.Body>
           </Card>
@@ -48,12 +53,15 @@ export default function Offers() {
             <Card.Body className="px-5 fw-light">
               <Card.Title className="text-center">Diet Program</Card.Title>
               <Card.Text className="text-center">
-                Even the all-powerful Pointing has no control about the blind
-                texts it is an almost unorthographic.
+                Personalized diet plans designed to suit your lifestyle,
+                focusing on nutritious choices for a healthier, more balanced
+                way of eating.
               </Card.Text>
               <div className="text-center">
                 <Link to="/services">
-                  <Button variant="outline-primary">Read More</Button>
+                  <Button variant="outline-primary">
+                    <Link to="/services">View</Link>
+                  </Button>
                 </Link>
               </div>
             </Card.Body>

@@ -27,13 +27,13 @@ export default function PlantBasedPage() {
             </p>
           </div>
           <div className="col-md-6">
-            <img src={plant1} alt="Image 1" className="img-fluid" />
+            <img src={plant1} alt=" 1" className="img-fluid" />
           </div>
         </div>
         <br />
         <div className="row">
           <div className="col-md-4">
-            <img src={plant2} alt="Image 2" className="img-fluid" />
+            <img src={plant2} alt=" 2" className="img-fluid" />
           </div>
           <div className="col-md-4">
             <h2>Benefits of a Plant-Based Diet</h2>
@@ -47,7 +47,7 @@ export default function PlantBasedPage() {
             </p>
           </div>
           <div className="col-md-4">
-            <img src={plant3} alt="Image 3" className="img-fluid" />
+            <img src={plant3} alt=" 3" className="img-fluid" />
           </div>
         </div>
         <br />
@@ -65,13 +65,13 @@ export default function PlantBasedPage() {
             </p>
           </div>
           <div className="col-md-8">
-            <img src={plant4} alt="Image 4" className="img-fluid" />
+            <img src={plant4} alt=" 4" className="img-fluid" />
           </div>
         </div>
         <br />
         <div className="row">
           <div className="col-md-6">
-            <img src={plant5} alt="Image 5" className="img-fluid" />
+            <img src={plant5} alt=" 5" className="img-fluid" />
           </div>
           <div className="col-md-6">
             <h2>Plant-Based Protein Sources</h2>
@@ -114,7 +114,7 @@ export default function PlantBasedPage() {
             </p>
           </div>
           <div className="col-md-6">
-            <img src={plant6} alt="Image 6" className="img-fluid" />
+            <img src={plant6} alt=" 6" className="img-fluid" />
           </div>
         </div>
       </div>
